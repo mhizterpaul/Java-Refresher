@@ -1,6 +1,21 @@
 import java.util.List;
 import java.util.ArrayList;
 
+/**
+ * Recursion Exercise
+ *
+ * Task Description:
+ * Write a permutation of [1, 2, 3]
+ * (permutation gives several possible variations, in which a set or number of things can be ordered or arranged).
+ *
+ * Give an array with unique integers, print all permutations.
+ *
+ * Example
+ *
+ * Input: [1, 2], print 12, 21
+ *
+ * Input: [1, 2, 3], print 123, 132, 213, 231, 312, 321.
+ */
 
 public class printPermutn {
      private static void backtrack(List<Integer> state, int[] choices, boolean[] selected, List<List<Integer>> res){
