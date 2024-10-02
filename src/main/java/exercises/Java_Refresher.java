@@ -1,3 +1,5 @@
+package exercises;
+
 import java.time.Instant;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
@@ -13,31 +15,11 @@ public class Java_Refresher {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEE, dd MM yyyy HH:mm:ss z");
         String formattedDateTime = utc.format(formatter);
         stringBuilderEx();
-        String vowels = vowelsOnly("Udacity Course");
-        System.out.println(vowels);
         System.out.println(formattedDateTime);
-        FindTarget.main();
     }
     static void stringBuilderEx(){
         StringBuilder str = new StringBuilder("Good Morning");
         str.insert(1, "Friend ");
         System.out.println(str);
-    }
-
-    /**
-     *
-     * @return vowels in the argument
-     */
-    static String vowelsOnly(String wVowels){
-        StringBuilder vowels = new StringBuilder();
-        String baseVowels = "aeiou";
-        String[] chars = wVowels.split("");
-
-        for(String str : chars){
-            if(!baseVowels.contains(str.toLowerCase())) continue;
-            vowels.append(str);
-        }
-
-        return String.valueOf(vowels);
     }
 }

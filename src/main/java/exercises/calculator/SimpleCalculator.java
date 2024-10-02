@@ -1,4 +1,4 @@
-/**
+package exercises.calculator; /**
  * Queue and Stack Exercise
  * Give a string, and implement a calculator to evaluate a simple expression string.
  * The expression string contains only non-negative integers, +, -, * operators.

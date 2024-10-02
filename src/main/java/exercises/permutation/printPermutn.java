@@ -1,3 +1,5 @@
+package exercises.permutation;
+
 import java.util.List;
 import java.util.ArrayList;
 

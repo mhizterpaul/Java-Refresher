@@ -1,4 +1,4 @@
-/**
+package exercises.binary_search_target_search; /**
  * Binary Search Coding Exercise
  *
  * Task Description:
