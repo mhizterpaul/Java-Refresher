@@ -11,20 +11,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class SimpleCalculator{
+public class Calculator {
     StackQueue operatorStackQueue = new StackQueue();
     StackQueue numberStackQueue = new StackQueue();
     HashMap<Character, Integer> priority = new HashMap<>();
-    public static void main(String[] args){
-        SimpleCalculator calculator1 = new SimpleCalculator();
-        SimpleCalculator calculator2 = new SimpleCalculator();
 
-        int res1 = calculator1.calculate("1+2");
-        int res2 = calculator2.calculate("1+2*5");
-        System.out.println(res1);
-        System.out.println(res2);
-
-    }
     public int calculate(String s){
         priority.put('+', 1);
         priority.put('-', 1);
