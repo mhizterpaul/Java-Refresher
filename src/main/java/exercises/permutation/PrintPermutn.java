@@ -19,7 +19,7 @@ import java.util.ArrayList;
  * Input: [1, 2, 3], print 123, 132, 213, 231, 312, 321.
  */
 
-public class printPermutn {
+public class PrintPermutn {
      private static void backtrack(List<Integer> state, int[] choices, boolean[] selected, List<List<Integer>> res){
          if(state.size() == choices.length){
              res.add(List.copyOf(state));
@@ -34,17 +34,17 @@ public class printPermutn {
                  backtrack(state, choices, selected, res);
                  //undo the choice and restore the previous state
                  selected[i] = false;
-                 state.remove(state.size()-1);
+                 state.removeLast();
              }
          }
     }
-    public static List<List<Integer>> printPermutatn(int[] arr){
+    public static List<List<Integer>> printPermutn(int[] arr){
          List<List<Integer>> res = new ArrayList<List<Integer>>();
          backtrack(new ArrayList<Integer>(), arr, new boolean[arr.length],res );
          return res;
     }
     public static void main(String[] args){
-         List<List<Integer>> res = printPermutatn(new int[]{1,2,3});
+         List<List<Integer>> res = printPermutn(new int[]{1,2,3});
          System.out.println(res);
     }
 }
